@@ -28,4 +28,4 @@ This utility can be self-hosting on Docker.
 
 From a directory containing machine definitions:
 
-$ docker run -v $PWD:/machines ewindisch/machine-compose
+
