@@ -1,6 +1,7 @@
 #!/bin/bash
 # Extended setup.sh for configuring Ubuntu 16.04 Dev Box on Mac using Virtual Box & Docker Toolbox
 # for headless setup. 
+# see https://github.com/startup-class/setup/blob/master/setup.sh
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
