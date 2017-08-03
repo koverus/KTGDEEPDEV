@@ -1,19 +1,24 @@
 # KTGDEEPDEV Mac Local Dev Laptop & Ubuntu Development Node (Virtual on Mac)
 
-First Run DEEPDEVSEUP.git
-After you log in to your docker-machine node run:
+Steps:
+1. Prepare Mac Dev laptop follow this blog:
+2. Connect to your base image and run the follwing scripts
+
+Login in using terminal or virtual box (not docker yet)  This will just setup our base ubuntu dev image.
 
 cd $HOME
 sudo apt-get install -y git-core
-git clone https://github.com/koverus/KTGDEEPDEVIMAGE/setup.git
-./setup/setup.sh   
+git clone https://github.com/koverus/KTGDEEPDEVIMAGE.git
+./setup.sh   
 
-See also http://github.com/startup-class/dotfiles 
+git clone https://github.com/koverus/KTGDEEPDEVIMAGE.git
+ln -sb .screenrc .
+ln -sb .bash_profile .
+ln -sb .bashrc .
+ln -sb .bashrc_custom .
+mv .emacs.d .emacs.d~
+ln -s .emacs.d .
 
-
-Defines machines for docker-machine and their
-compose files, while integrating the two via a small
-shell script.
 
 Machine definitions:
 A directory structure is expected as follows: 
